@@ -1,0 +1,17 @@
+{
+  "name": "${containerWorkspaceFolderBasename}",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "features": {
+    "./rye": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.typeCheckingMode": "basic"
+      }
+    }
+  }
+}
